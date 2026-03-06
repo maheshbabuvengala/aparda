@@ -1,3 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: 30 58 138;
+    --primary-light: 59 130 246;
+    --accent: 234 179 8;
+    /* Warmer, richer yellow/gold */
+    --accent-dark: 202 138 4;
+    --glass-bg: rgba(255, 255, 255, 0.75);
+    --glass-border: rgba(255, 255, 255, 0.25);
+    --shadow-premium: 0 20px 40px -10px rgba(30, 58, 138, 0.15);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
+  body {
+    @apply antialiased text-gray-900 bg-slate-50;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Outfit', sans-serif;
+    @apply tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-700 via-blue-900 to-blue-950;
+  }
+
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600;
+  }
+
+  .glass {
+    @apply bg-white/75 backdrop-blur-2xl border border-white/40 shadow-[var(--shadow-premium)];
+  }
+
+  .glass-dark {
+    @apply bg-blue-950/85 backdrop-blur-2xl border border-white/15 shadow-2xl;
+  }
+
+  .premium-card {
+    @apply bg-white rounded-[2.5rem] border border-gray-100 shadow-[var(--shadow-premium)] hover:shadow-2xl hover:shadow-blue-900/15 transition-all duration-700 hover:-translate-y-2;
+  }
+
+  .hero-gradient {
+    background: radial-gradient(circle at top right, rgba(59, 130, 246, 0.08), transparent 70%),
+      radial-gradient(circle at bottom left, rgba(234, 179, 8, 0.05), transparent 70%);
+  }
+
+  .section-padding {
+    @apply py-24 md:py-32;
+  }
+
+  .telugu-nudge-down {
+    transform: translateY(0.08em);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-50;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-blue-900/20 rounded-full border-2 border-solid border-slate-50 hover:bg-yellow-500/80 transition-colors duration-300;
+}
+
+/* Animations */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.mask-radial {
+  mask-image: radial-gradient(circle, black, transparent 80%);
+}

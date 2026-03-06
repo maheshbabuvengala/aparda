@@ -5,16 +5,29 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit -p tsconfig.app.json"
   },
   "dependencies": {
+    "@cashfreepayments/cashfree-js": "^1.0.6",
+    "@firebase/analytics": "^0.10.20",
+    "@firebase/app": "^0.14.9",
+    "@firebase/auth": "^1.12.1",
+    "@firebase/firestore": "^4.12.0",
     "@supabase/supabase-js": "^2.57.4",
+    "cloudinary-build-url": "^0.2.4",
+    "clsx": "^2.1.1",
+    "firebase": "^12.10.0",
+    "framer-motion": "^12.34.5",
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.13.1",
+    "tailwind-merge": "^3.5.0",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",
