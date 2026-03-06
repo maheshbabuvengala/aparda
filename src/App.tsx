@@ -395,7 +395,7 @@ function LandingPage() {
         <LandingCarousel currentLang={lang} />
       </section>
 
-      <AboutSection />
+      <AboutSection currentLang={lang} />
 
       {/* Intro Section - Telugu Content with Premium Look */}
       <motion.section

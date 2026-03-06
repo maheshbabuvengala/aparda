@@ -42,10 +42,12 @@ const NewsTicker: React.FC<NewsTickerProps> = ({ currentLang }) => {
                         />
                     </div>
                     <span className={cn(
-                        "text-[10px] font-black uppercase tracking-[0.2em] text-blue-950 whitespace-nowrap hidden sm:block",
+                        "text-[10px] font-black uppercase tracking-[0.2em] text-blue-950 whitespace-nowrap hidden sm:flex items-center justify-center",
                         currentLang === 'te' ? "font-telugu" : ""
                     )}>
-                        {t.footer.news}
+                        <span className={currentLang === 'te' ? "telugu-nudge-down" : ""}>
+                            {t.footer.news}
+                        </span>
                     </span>
                 </div>
                 {/* Fade-out mask */}

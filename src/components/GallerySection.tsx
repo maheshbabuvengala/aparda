@@ -60,9 +60,13 @@ const GallerySection: React.FC<GallerySectionProps> = ({ currentLang }) => {
                         >
                             <div className="w-10 h-[2px] bg-blue-600 rounded-full" />
                             <span className={cn(
-                                "text-blue-600 font-black uppercase tracking-[0.4em] text-[9px] md:text-[10px]",
+                                "text-blue-600 font-black uppercase tracking-[0.4em] text-[9px] md:text-[10px] flex items-center justify-center",
                                 currentLang === 'te' ? "font-telugu" : ""
-                            )}>{t.gallery.badge}</span>
+                            )}>
+                                <span className={currentLang === 'te' ? "telugu-nudge-down" : ""}>
+                                    {t.gallery.badge}
+                                </span>
+                            </span>
                         </motion.div>
                         <h2 className={cn(
                             "text-4xl md:text-7xl font-black text-gray-900 tracking-tighter leading-none",
@@ -129,11 +133,13 @@ const GallerySection: React.FC<GallerySectionProps> = ({ currentLang }) => {
 
                                 <div className="absolute bottom-4 left-4 md:bottom-6 md:left-6 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100 translate-y-2 group-hover:translate-y-0">
                                     <div className={cn(
-                                        "flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 bg-white/10 backdrop-blur-xl border border-white/20 rounded-full text-[8px] md:text-[9px] font-black uppercase tracking-widest text-white",
+                                        "flex items-center justify-center gap-2 px-3 py-1.5 md:px-4 md:py-2 bg-white/10 backdrop-blur-xl border border-white/20 rounded-full text-[8px] md:text-[9px] font-black uppercase tracking-widest text-white",
                                         currentLang === 'te' ? "font-telugu" : ""
                                     )}>
                                         <ImageIcon size={10} />
-                                        {t.gallery.card.view}
+                                        <span className={currentLang === 'te' ? "telugu-nudge-down" : ""}>
+                                            {t.gallery.card.view}
+                                        </span>
                                     </div>
                                 </div>
                             </motion.div>

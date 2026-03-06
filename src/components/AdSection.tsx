@@ -123,9 +123,14 @@ const AdCard: React.FC<{ ad: Advertisement; currentLang: Language }> = ({ ad, cu
             className={`group relative bg-white rounded-[2.5rem] md:rounded-[3rem] overflow-hidden border border-gray-100 shadow-[var(--shadow-premium)] hover:shadow-2xl hover:-translate-y-2 transition-all duration-700 ${ad.websiteUrl ? 'cursor-pointer' : ''}`}
         >
             {/* Sponsored tag */}
-            <div className="absolute top-5 left-5 z-20 flex items-center gap-1.5 bg-black/30 backdrop-blur-md border border-white/20 text-white px-3 py-1.5 rounded-full text-[9px] font-black uppercase tracking-widest shadow-sm font-telugu">
+            <div className={cn(
+                "absolute top-5 left-5 z-20 flex items-center justify-center gap-1.5 bg-black/30 backdrop-blur-md border border-white/20 text-white px-3 py-1.5 rounded-full text-[9px] font-black uppercase tracking-widest shadow-sm",
+                currentLang === 'te' ? "font-telugu" : ""
+            )}>
                 <Megaphone size={10} className="text-yellow-400" />
-                {t.ads.card.sponsored}
+                <span className={currentLang === 'te' ? "telugu-nudge-down" : ""}>
+                    {t.ads.card.sponsored}
+                </span>
             </div>
 
             {/* Image Area */}

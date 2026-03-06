@@ -112,6 +112,29 @@ export const translations = {
             lightbox: {
                 documentation: 'AP-ARDA Official Documentation'
             }
+        },
+        about: {
+            badge: 'Our Foundation & Pledge',
+            title: 'AP-ARDA Resolution',
+            resolution: 'Resolution',
+            genesis: 'Genesis of AP-ARDA',
+            genesisMotto: 'Every morning a new hope... Every heart a dream world... Time to realize our dreams!',
+            genesisSubtitle: 'Land - Our Dream Kingdom',
+            genesisPoints: [
+                'Must grow like kings...',
+                'Build dreams with land...',
+                'Let\'s carve the future on land!'
+            ],
+            genesisFooter: 'Moving forward as one... towards development!',
+            oathTitle: 'AP-ARDA Pledge of Resolve',
+            oathText1: 'We, as members of AP-ARDA, solemnly resolve today – with God and society as our witnesses – to move the real estate sector forward with justice, transparency, and ethics.',
+            oathText2: 'Thinking of land not just as a business, but as the hopes, future, and security of the people. Working to create equal opportunities for every section of society. Accepting Social Justice as our guide.',
+            oathText3: 'Staying away from illegalities, acting with righteousness and responsibility. Respecting government regulations and striving for development while maintaining public trust.',
+            oathText4: 'Maintaining our unity, upholding the dignity of members, and taking the prestige of AP-ARDA to new heights.',
+            oathFooter1: 'Our Goal - Development. Our Path - Justice.',
+            oathFooter2: 'Our Aim - People\'s Welfare.',
+            oathFinal: 'Unity is our Strength - Development is our Goal.',
+            orgName: 'Andhra Pradesh Apex Real Estate Developers Association (Reg No 65/2026)'
         }
     },
     te: {
@@ -227,8 +250,30 @@ export const translations = {
                 view: 'వీక్షించండి'
             },
             lightbox: {
-                documentation: 'ఏపీ-అర్డా అధికారిక డాక్యుమెంటేషన్'
+                documentation: 'ఏపీ-అర్డాతో అధికారిక డాక్యుమెంటేషన్'
             }
+        },
+        about: {
+            badge: 'మా పునాది & ప్రతిజ్ఞ',
+            title: 'ఏపీ-అర్డా సంకల్పం',
+            genesis: 'ఏపీ-అర్డా ఆవిర్భావం',
+            genesisMotto: 'ప్రతి ఉదయం ఒక కొత్త ఆశ... ప్రతి హృదయం ఒక స్వప్న లోకం... మన కలలను నిజం చేసే సమయం వచ్చేసింది!',
+            genesisSubtitle: 'భూమి - మన కలల సామ్రాజ్యం',
+            genesisPoints: [
+                'రారాజుల్లా ఎదగాలి...',
+                'భూమితో స్వప్నాలు నిర్మించాలి...',
+                'భవిష్యత్తును భూమిపై చెక్కుకుందాం!'
+            ],
+            genesisFooter: 'ఒక్కటై ముందుకు... అభివృద్ధి దిశగా!',
+            oathTitle: 'ఏపీ-అర్డా సంకల్ప ప్రతిజ్ఞ',
+            oathText1: 'మేము, AP-ARDA సభ్యులముగా, దేవుని సాక్షిగా మరియు సమాజాన్ని సాక్షిగా చేసుకుని, ఈ రోజు గంభీరంగా సంకల్పం చేస్తాము – రియల్ ఎస్టేట్ రంగాన్ని న్యాయబద్ధత, పారదర్శకత, నైతికతలతో ముందుకు తీసుకువెళతామని.',
+            oathText2: 'భూమిని కేవలం వ్యాపారంగా కాక, ప్రజల ఆశలు, వారి భవిష్యత్తు, వారి భద్రతగా భావిస్తామని. సమాజంలోని ప్రతి వర్గానికి సమాన అవకాశాలు కల్పించే విధంగా పనిచేస్తామని. సోషల్ జస్టిస్‌ను మన మార్గదర్శకంగా స్వీకరిస్తామని.',
+            oathText3: 'అక్రమాలకు దూరంగా, ధర్మబద్ధంగా, బాధ్యతతో వ్యవహరిస్తామని. ప్రభుత్వ నిబంధనలను గౌరవిస్తూ, ప్రజల నమ్మకాన్ని కాపాడుతూ రంగ అభివృద్ధికి కృషి చేస్తామని.',
+            oathText4: 'మన ఐక్యతను కాపాడుతూ, సభ్యుల గౌరవాన్ని నిలబెట్టుకుంటూ, AP-ARDA ప్రతిష్టను ఉన్నత శిఖరాలకు తీసుకెళతామని.',
+            oathFooter1: 'మన లక్ష్యం - అభివృద్ధి. మన మార్గం - న్యాయం.',
+            oathFooter2: 'మన ధ్యేయం - ప్రజల మేలు.',
+            oathFinal: 'ఐక్యతే మన బలం - అభివృద్ధే మన లక్ష్యం.',
+            orgName: 'Andhra Pradesh Apex Real Estate Developers Association (Reg No 65/2026)'
         }
     }
 };
