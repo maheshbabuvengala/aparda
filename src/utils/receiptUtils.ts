@@ -164,7 +164,7 @@ export const generateReceipt = async (data: ReceiptData) => {
     ctx.font = '500 12px Inter, sans-serif';
     ctx.fillText('This is a computer generated receipt and does not require a physical signature.', 60, currentY);
     currentY += 25;
-    ctx.fillText('Amaravati Region Developers Association (AP-ARDA)', 60, currentY);
+    ctx.fillText('Andhra Pradesh Apex Region Developers Association (AP-ARDA)', 60, currentY);
     currentY += 20;
     ctx.fillText('Contact: support@aparda.com | +91 9177142464', 60, currentY);
 

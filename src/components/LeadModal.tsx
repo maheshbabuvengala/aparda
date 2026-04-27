@@ -93,7 +93,7 @@ const LeadModal: React.FC<LeadModalProps> = ({ isRegistrationOpen }) => {
     return (
         <AnimatePresence>
             {isOpen && (
-                <div className="fixed inset-0 z-[200] flex items-center justify-center p-4">
+                <div key="lead-modal-container" className="fixed inset-0 z-[200] flex items-center justify-center p-4">
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -142,7 +142,7 @@ const LeadModal: React.FC<LeadModalProps> = ({ isRegistrationOpen }) => {
                                             Connect with <span className="text-blue-600">Professional</span> Developers
                                         </h2>
                                         <p className="text-gray-500 mt-4 font-medium">
-                                            Join our network and stay updated with the latest in Amaravati real estate.
+                                            Join our network and stay updated with the latest in Apex real estate.
                                         </p>
                                     </div>
 

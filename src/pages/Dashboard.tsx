@@ -182,7 +182,7 @@ const Dashboard: React.FC = () => {
                         </div>
                         <h3 className="text-2xl font-black mb-4 relative z-10">AP-ARDA<br />Master Plan 2024</h3>
                         <p className="text-blue-100/70 text-sm leading-relaxed mb-6 relative z-10">
-                            The Amaravati development roadmap is currently in Phase 3. Regulatory filings have increased by 14% this quarter.
+                            The Apex development roadmap is currently in Phase 3. Regulatory filings have increased by 14% this quarter.
                         </p>
                         <button className="w-full bg-yellow-500 hover:bg-yellow-400 text-blue-900 font-bold py-4 rounded-2xl transition-all relative z-10 flex items-center justify-center gap-2">
                             Review Roadmap <ChevronRight size={18} />

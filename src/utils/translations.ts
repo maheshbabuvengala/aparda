@@ -25,7 +25,7 @@ export const translations = {
         },
         intro: {
             badge: 'Foundation of AP Excellence',
-            title: 'Capital Amaravati Real Estate Developers Association',
+            title: 'Andhra Pradesh Apex Real Estate Developers Association',
             description: 'A professional association of developers formed to develop the real estate sector in the capital region and Andhra Pradesh efficiently and responsibly.',
             startReg: 'Start Registration',
             downloadCert: 'Download Membership Certificate'
@@ -33,7 +33,7 @@ export const translations = {
         missionVision: {
             vision: {
                 title: 'Our Vision',
-                text: 'To guide the real estate sector to play a key role in shaping Amaravati as a world-class, sustainable city.'
+                text: 'To guide the real estate sector to play a key role in shaping the region as a world-class, sustainable Apex ecosystem.'
             },
             mission: {
                 title: 'Our Mission',
@@ -61,7 +61,7 @@ export const translations = {
             news: 'AD NOTICE',
             legacy: {
                 title: 'Legacy',
-                text: 'Empowering developers and securing investors since the inception of Amaravati capital region.'
+                text: 'Empowering developers and securing investors since the inception of Apex capital region.'
             },
             legal: 'Legal',
             copyright: '© 2024 AP-ARDA. All Excellence Reserved.',
@@ -76,7 +76,7 @@ export const translations = {
         collaborators: {
             badge: 'Registered Members',
             title: 'Valued Collaborators',
-            description: "Trusted real estate professionals and companies registered with AP-ARDA, shaping Amaravati's future.",
+            description: "Trusted real estate professionals and companies registered with AP-ARDA, shaping the future of Apex.",
             stats: {
                 members: 'Registered Members',
                 verified: 'Verified by AP-ARDA',
@@ -95,7 +95,7 @@ export const translations = {
         ads: {
             badge: 'Featured Opportunities',
             title: 'Property Spotlight',
-            description: "Curated real estate opportunities from our licensed network, shaping Amaravati's future.",
+            description: "Curated real estate opportunities from our licensed network, shaping the future of Apex.",
             card: {
                 sponsored: 'Sponsored',
                 visit: 'Visit Website',
@@ -165,7 +165,7 @@ export const translations = {
         },
         intro: {
             badge: 'ఆంధ్రప్రదేశ్ రియల్ ఎస్టేట్ రంగానికి పునాది',
-            title: 'రాజధాని అమరావతి రియల్ ఎస్టేట్ అభివృద్ధి సంఘం',
+            title: 'ఆంధ్రప్రదేశ్ ఎపెక్స్ రియల్ ఎస్టేట్ అభివృద్ధి సంఘం',
             description: 'రాజధాని ప్రాంతం మరియు ఆంధ్రప్రదేశ్లో రియల్ ఎస్టేట్ రంగాన్ని సమర్థవంతంగా, బాధ్యతతో అభివృద్ధి చేయడానికి ఏర్పడిన ప్రొఫెషనల్ డెవలపర్ల సంఘం',
             startReg: 'రిజిస్ట్రేషన్ ప్రారంభించండి',
             downloadCert: 'మెంబర్‌షిప్ సర్టిఫికేట్ డౌన్లోడ్ చేయండి'
@@ -173,7 +173,7 @@ export const translations = {
         missionVision: {
             vision: {
                 title: 'మా దృష్టి',
-                text: 'అమరావతిని ప్రపంచ స్థాయి, సుస్థిర పరచిన నగరంగా తీర్చిదిద్దడంలో రియల్ ఎస్టేట్ రంగం కీలక పాత్ర పోషించేలా మార్గదర్శనం చేయడం.'
+                text: 'ఆంధ్రప్రదేశ్‌ను ప్రపంచ స్థాయి, సుస్థిర పరచిన ఎపెక్స్ ప్రాంతంగా తీర్చిదిద్దడంలో రియల్ ఎస్టేట్ రంగం కీలక పాత్ర పోషించేలా మార్గదర్శనం చేయడం.'
             },
             mission: {
                 title: 'మా ధ్యేయం',
@@ -201,7 +201,7 @@ export const translations = {
             news: 'ప్రకటన',
             legacy: {
                 title: 'వారసత్వం',
-                text: 'అమరావతి రాజధాని ప్రాంతం ఏర్పడినప్పటి నుండి డెవలపర్లను శక్తివంతం చేయడం మరియు పెట్టుబడిదారులను రక్షించడం.'
+                text: 'రాజధాని ప్రాంతం ఎపెక్స్ ఏర్పడినప్పటి నుండి డెవలపర్లను శక్తివంతం చేయడం మరియు పెట్టుబడిదారులను రక్షించడం.'
             },
             legal: 'చట్టపరమైన',
             copyright: '© 2024 AP-ARDA. అన్ని హక్కులు ఎక్సలెన్స్‌కు కేటాయించబడ్డాయి.',
@@ -216,7 +216,7 @@ export const translations = {
         collaborators: {
             badge: 'నమోదిత సభ్యులు',
             title: 'విలువైన సహకారులు',
-            description: 'ఏపీ-అర్డాతో నమోదైన విశ్వసనీయ రియల్ ఎస్టేట్ నిపుణులు మరియు కంపెనీలు, అమరావతి భవిష్యత్తును తీర్చిదిద్దుతున్నాయి.',
+            description: 'ఏపీ-అర్డాతో నమోదైన విశ్వసనీయ రియల్ ఎస్టేట్ నిపుణులు మరియు కంపెనీలు, ఆంధ్రప్రదేశ్ ఎపెక్స్ భవిష్యత్తును తీర్చిదిద్దుతున్నాయి.',
             stats: {
                 members: 'నమోదిత సభ్యులు',
                 verified: 'ఏపీ-అర్డా ద్వారా ధృవీకరించబడింది',
@@ -235,7 +235,7 @@ export const translations = {
         ads: {
             badge: 'ముఖ్యమైన అవకాశాలు',
             title: 'ప్రముఖ ప్రాపర్టీలు',
-            description: 'మా లైసెన్స్డ్ నెట్‌వర్క్ నుండి ఎంపిక చేసిన రియల్ ఎస్టేట్ అవకాశాలు, అమరావతి భవిష్యత్తును తీర్చిదిద్దుతున్నాయి.',
+            description: 'మా లైసెన్స్డ్ నెట్‌వర్క్ నుండి ఎంపిక చేసిన రియల్ ఎస్టేట్ అవకాశాలు, ఆంధ్రప్రదేశ్ ఎపెక్స్ భవిష్యత్తును తీర్చిదిద్దుతున్నాయి.',
             card: {
                 sponsored: 'ప్రాయోజితం',
                 visit: 'వెబ్‌సైట్‌ను సందర్శించండి',

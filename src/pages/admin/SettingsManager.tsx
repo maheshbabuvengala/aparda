@@ -6,10 +6,8 @@ import { cn } from '../../utils/cn';
 
 interface Config {
     registrationFee: number;
-    cashfreeAppId: string;
-    cashfreeSecretKey: string;
-    cashfreeApiUrl: string;
-    cashfreeApiVersion: string;
+    razorpayKeyId: string;
+    razorpayKeySecret: string;
     adTickerText: string;
     adTickerContact: string;
     privacyPolicyContent: string;
@@ -20,11 +18,9 @@ interface Config {
 
 const SettingsManager: React.FC = () => {
     const [config, setConfig] = useState<Config>({
-        registrationFee: 10999,
-        cashfreeAppId: 'TEST109743997a4de753f275e5e6efc799347901',
-        cashfreeSecretKey: 'cfsk_ma_test_da6eda7e5ae58a0366bdc688dd99fc57_33e2863f',
-        cashfreeApiUrl: 'https://sandbox.cashfree.com/pg',
-        cashfreeApiVersion: '2022-09-01',
+        registrationFee: 10000,
+        razorpayKeyId: 'rzp_live_SiSULbxrI7nSnp',
+        razorpayKeySecret: 'HhP1VSA86vFMIvKrdAPdBKne',
         adTickerText: 'For Advertisements Contact AP-ARDA | Premium Real Estate Listings Available',
         adTickerContact: '9381574024',
         privacyPolicyContent: '',
@@ -42,7 +38,12 @@ const SettingsManager: React.FC = () => {
                 const docRef = doc(db, 'settings', 'config');
                 const docSnap = await getDoc(docRef);
                 if (docSnap.exists()) {
-                    setConfig(docSnap.data() as Config);
+                    const data = docSnap.data() as Config;
+                    // Forcing 10000 if it was still the old default
+                    if (data.registrationFee === 10999 || data.registrationFee === 1) {
+                        data.registrationFee = 10000;
+                    }
+                    setConfig(data);
                 }
             } catch (error) {
                 console.error('Error fetching config:', error);
@@ -201,52 +202,32 @@ const SettingsManager: React.FC = () => {
                         <div className="bg-blue-100 p-2.5 rounded-2xl">
                             <ShieldCheck className="text-blue-700" size={24} />
                         </div>
-                        <h2 className="text-xl font-bold">Cashfree Gateway Configuration</h2>
+                        <h2 className="text-xl font-bold">Razorpay Gateway Configuration</h2>
                         <div className={cn(
                             "px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest",
-                            config.cashfreeApiUrl.includes('sandbox') ? "bg-orange-100 text-orange-600" : "bg-green-100 text-green-600"
+                            config.razorpayKeyId.includes('live') ? "bg-green-100 text-green-600" : "bg-orange-100 text-orange-600"
                         )}>
-                            {config.cashfreeApiUrl.includes('sandbox') ? 'Sandbox Mode' : 'Production Mode'}
+                            {config.razorpayKeyId.includes('live') ? 'Live Mode' : 'Test Mode'}
                         </div>
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-6">
                         <div className="col-span-2 md:col-span-1">
-                            <label className="text-xs font-bold text-gray-400 uppercase mb-2 block tracking-widest">App ID</label>
+                            <label className="text-xs font-bold text-gray-400 uppercase mb-2 block tracking-widest">Key ID</label>
                             <input
                                 type="text"
-                                value={config.cashfreeAppId}
-                                onChange={(e) => setConfig({ ...config, cashfreeAppId: e.target.value })}
+                                value={config.razorpayKeyId}
+                                onChange={(e) => setConfig({ ...config, razorpayKeyId: e.target.value })}
                                 className="w-full bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 text-sm font-medium focus:ring-4 focus:ring-blue-500/10 outline-none"
                                 required
                             />
                         </div>
                         <div className="col-span-2 md:col-span-1">
-                            <label className="text-xs font-bold text-gray-400 uppercase mb-2 block tracking-widest">Secret Key</label>
+                            <label className="text-xs font-bold text-gray-400 uppercase mb-2 block tracking-widest">Key Secret</label>
                             <input
                                 type="password"
-                                value={config.cashfreeSecretKey}
-                                onChange={(e) => setConfig({ ...config, cashfreeSecretKey: e.target.value })}
-                                className="w-full bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 text-sm font-medium focus:ring-4 focus:ring-blue-500/10 outline-none"
-                                required
-                            />
-                        </div>
-                        <div className="col-span-2">
-                            <label className="text-xs font-bold text-gray-400 uppercase mb-2 block tracking-widest">API Endpoint URL</label>
-                            <input
-                                type="url"
-                                value={config.cashfreeApiUrl}
-                                onChange={(e) => setConfig({ ...config, cashfreeApiUrl: e.target.value })}
-                                className="w-full bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 text-sm font-medium focus:ring-4 focus:ring-blue-500/10 outline-none"
-                                required
-                            />
-                        </div>
-                        <div className="col-span-2 md:col-span-1">
-                            <label className="text-xs font-bold text-gray-400 uppercase mb-2 block tracking-widest">API Version</label>
-                            <input
-                                type="text"
-                                value={config.cashfreeApiVersion}
-                                onChange={(e) => setConfig({ ...config, cashfreeApiVersion: e.target.value })}
+                                value={config.razorpayKeySecret}
+                                onChange={(e) => setConfig({ ...config, razorpayKeySecret: e.target.value })}
                                 className="w-full bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 text-sm font-medium focus:ring-4 focus:ring-blue-500/10 outline-none"
                                 required
                             />

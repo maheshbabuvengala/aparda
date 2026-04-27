@@ -12,7 +12,6 @@
     "typecheck": "tsc --noEmit -p tsconfig.app.json"
   },
   "dependencies": {
-    "@cashfreepayments/cashfree-js": "^1.0.6",
     "@firebase/analytics": "^0.10.20",
     "@firebase/app": "^0.14.9",
     "@firebase/auth": "^1.12.1",
